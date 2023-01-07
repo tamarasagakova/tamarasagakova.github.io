@@ -26,3 +26,31 @@ ul {
 a {
   text-decoration: none;
 }
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 163, 146);
+    font-size: 20px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.nav-container a{
+    display: block;
+    margin: 0.5em;
+}
+
+li.nav-item{
+    padding: 3px;
+}
+
+li.nav-item:hover {
+    background-color: rgb(11, 101, 91);
+    cursor: pointer;
+}
