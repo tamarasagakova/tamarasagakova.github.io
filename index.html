@@ -1,74 +1,112 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- style -->
-        <link rel="stylesheet" href="/assets/scripts/stylesheet.css">
-        <!-- unicons -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<html lang="en">
 
-        <title>Tamara Sagakova</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <!-- navbar  [#A0103E] -->
-            <nav class="nav-container">
-                <a href="#" class="nav-logo">Tamara Sagakova</a>
-                <ul class="nav-list" id="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <i class="uil uil-estate"></i> About
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#relevent-courses">
-                            <i class="uil uil-books"></i> Relevent Courses
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">
-                            <i class="uil uil-scenery"></i> Projects
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <i class="uil uil-message"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- END - navbar -->
-            
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamara Sagakova</title>
 
-        <main class="main">
-            <section id="about">
+    <!-- Style -->
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+</head>
 
-            </section>
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="flex-container">
+            <h1 class="logo"><a href="#">Tamara Sagakova</a></h1>
+            <ul class="navbar" id="navbar">
+                <li><a class="nav-links" href="#about">About</a></li>
+                <li><a class="nav-links" href="#relevent-courses">Relevent Courses</a></li>
+                <li><a class="nav-links" href="#projects">Projects</a></li>
+                <li><a class="nav-links" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
+        <!-- END - navbar -->
+
+        <!-- about -->
+        <section id="about">
+            <div class="fade"></div>
+            <div class="about-text">
+                <p>Hi, I am</p>
+                <h1>Tamara</h1>
+                <p>
+                    a Web Dev enthusiast and a Computer Science student.
+                </p>
+            </div>
+        </section>
+        <!-- END - about -->
+    </header>
+
+    <main>
+        <!-- about me -->
+        <top-button>
+            <!-- relevent courses-->
             <section id="relevent-courses">
-
+                <h2>Relevent Courses</h2>
             </section>
+            <!-- END - relevent courses-->
 
+            <!-- projects list/description -->
             <section id="projects">
-
+                <h2>Projects</h2>
             </section>
+            <!-- END - projects list/description -->
 
+            <!-- contact form-->
             <section id="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <aside style=" text-align: center; color: #343434;">
+                        <p> Contact me if you want to collaborate or have any questions about my projects.
+                            I will get back to you in 24-48hr window.
+                        </p>
+                        <p> You information <strong>will not</strong> be stored or shared.</p>
+                    </aside>
+                    <!-- relative_url.htm is a random file name for the action, so I don't get errors when validating the site-->
+                    <!-- will be using javascript for the action atribute-->
+                    <form action="relative_url.htm" method="post">
+                        <form-field-name>
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name" required minlength="3" maxlength="25">
+                        </form-field-name><br>
 
+                        <form-field-email>
+                            <label for="email">Email*</label>
+                            <input type="text" name="email" id="email" size="30" maxlength="35" required>
+                        </form-field-email><br>
+
+                        <form-field-subject>
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" maxlength="25">
+                        </form-field-subject><br>
+
+                        <form-field-message>
+                            <label for="message">Message*</label>
+                            <textarea name="message" placeholder="Type message here..." id="message"
+                                style="height:200px" required></textarea>
+                        </form-field-message><br>
+
+                        <input type="submit" value="Submit"><i class="far fa-paper-plane"></i>
+                    </form>
+                    <br><br>
+                </div>
             </section>
+            <!-- END - contact form-->
 
-        </main>
+            <!-- back to the top button-->
+            <div class="back-to-top-wrapper">
+                <a href="#" class="top" aria-label="Back to Top">&#8593;</a>
+            </div>
+            <!-- END - back to the top button-->
+        </top-button>
+    </main>
 
-        <footer class="footer">
-         
-        </footer>
+    <footer>
+        <p style="text-align:center;">Copyright © 2022 All rights reserved | Designed and Built by Tamara Sagakova</p>
+    </footer>
+</body>
 
-        <script src=""></script>
-    </body>
 </html>
