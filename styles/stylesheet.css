@@ -16,6 +16,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-padding-top: 60px;
+}
+
 body {
     font-size: 1em;
     font-weight: 400;
@@ -174,13 +178,26 @@ section {
 
 /* Contact */
 #contact {
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
-
+/*
 .container {
     border-radius: 5px;
     padding: 20px;
+}*/
+
+.container {
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    -margin: 0 auto;
+    -margin-top: 20px;
+    padding: 10px;
+    position: relative;
 }
 
 aside.container>p {
