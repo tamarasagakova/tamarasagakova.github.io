@@ -9,65 +9,139 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="/styles/stylesheet.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
 </head>
 
 <body>
-    <!-- navbar -->
     <header class="header">
-        <nav class="flex-container">
-            <h1 class="logo"><a href="#">Tamara Sagakova</a></h1>
-            <ul class="navbar" id="navbar">
+        <!-- navbar -->
+        <nav class="navbar-container">
+            <h1 class="logo"><a href="#about">TS</a></h1>
+            <ul class="nav-contents" id="nav-contents">
                 <li><a class="nav-links" href="#about">About</a></li>
-                <li><a class="nav-links" href="#relevant-courses">Relevant Courses</a></li>
+                <li><a class="nav-links" href="#education">Education</a></li>
                 <li><a class="nav-links" href="#projects">Projects</a></li>
                 <li><a class="nav-links" href="#contact">Contact</a></li>
             </ul>
         </nav>
-
         <!-- END - navbar -->
-
-        <!-- about -->
-        <section id="about">
-            <div class="fade"></div>
-            <div class="about-text">
-                <p>Hi, I am</p>
-                <h1>Tamara</h1>
-                <p>
-                    a Web Dev enthusiast and a Computer Science student.
-                </p>
-            </div>
-        </section>
-        <!-- END - about -->
     </header>
 
     <main>
-        <!-- about me -->
-        <top-button>
-            <!-- relavant courses-->
-            <section id="relevant-courses">
-                <h2>Relevant Courses</h2>
+        <!-- about -->
+        <div class="wrapper">
+            <section class="section" id="about">
+                <div class="about-text">
+                    <p>Hi, I am</p>
+                    <h1>Tamara Sagakova</h1>
+                    <p>a web development enthusiast and CS student.</p>
+                </div>
             </section>
-            <!-- END - relavant courses-->
+            <!-- END - about -->
+
+            <!-- education-->
+            <section class="section" id="education">
+                <div class="ed-container">
+                    <h2>Education</h2>
+                    <div class="education-item-1">
+                        <h3>🔱 University of California, San Diego</h3>
+                        <p class="education-details">Bachelor of Science, Computer Science | 2021 - 2023</p>
+                        <p class="education-description">Relevant Courses:</p>
+                        <ul class="education-courses">
+                            <li>Advanced Data Structures</li>
+                            <li>Software Engineering</li>
+                            <li>AI: Search and Reasoning</li>
+                            <li>Web Client Languages</li>
+                            <li>Computer Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-item-2">
+                        <h3>San Diego Community College District</h3>
+                        <p class="education-details">Associates of Arts and Sciences, Computer Science & Economics &
+                            Mathematics | 2019 - 2021</p>
+                        <p class="education-description">Relevant Courses:</p>
+                        <ul class="education-courses">
+                            <li>Computer Animated Statistics</li>
+                            <li>Mathematics for Algorithms and Systems</li>
+                            <li>Principles of Macroeconomics & Microeconomics</li>
+                            <li>Financial & Managerial Accounting</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END - education -->
 
             <!-- projects list/description -->
-            <section id="projects">
-                <h2>Projects</h2>
+            <section class="section" id="projects">
+                <div class="proj-container">
+                    <h2>Projects</h2>
+                    <table>
+                        <tr>
+                            <td class="project-title">
+                                <a href="https://github.com/tamarasagakova/color-pick.git" target="_blank"
+                                    class="githublogo"><img src="/images/github.256x249.png" class="githublogo"
+                                        alt="Github logo" style="width:30px;height:30px;"></a>
+                                <a class="project-1">Color Picker</a>
+                            </td>
+                            <td class="project-description">
+                                <p>[HTML, CSS, JavaScript]</p>
+                                <ul class="project-bp">
+                                    <li>Developed a Chrome extension using EyeDropper interface that allows users to
+                                        quickly and easily identify the hex code of any color on a website.</li>
+                                    <li>Implemented the local storage functionality using JavaScript, allowing users
+                                        to view and copy the saved hex codes at any time, without the need for an
+                                        internet connection or access to the original website.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="project-title">
+                                <a href="https://github.com/cse110-fa22-group6/cse110-fa22-group6.git" target="_blank"
+                                    class="githublogo"><img src="/images/github.256x249.png" class="githublogo"
+                                        alt="Github logo" style="width:30px;height:30px;"></a>
+                                <a class="project-2">Job Application Tracker</a>
+                            </td>
+                            <td class="project-description">
+                                <p>[HTML, CSS, JavaScript, Puppeteer, Jest]</p>
+                                <ul class="project-bp">
+                                    <li>Collaborated with UX/UI team to create an intuitive web portal that would
+                                        help users keep track of job applications.</li>
+                                    <li>Designed a user-friendly HTML/CSS interface optimized for various screen
+                                        sizes and devices.</li>
+                                    <li>Set up a GitHub Actions-based CI/CD pipeline to automate tasks like linting,
+                                        HTML validation, documentation generation, and code testing, with the aim of
+                                        improving code quality and speeding up code changes.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="project-title">
+                                <div></div>
+                                <a class="project-3">Gomoku</a>
+                            </td>
+                            <td class="project-description">
+                                <p>[Python]</p>
+                                <ul class="project-bp">
+                                    <li>Implemented Monte Carlo Tree Search (MCTS) algorithm to select the best move
+                                        for the AI player in each turn.</li>
+                                    <li>Conducted extensive testing and optimization to improve the performance and
+                                        accuracy of the AI player.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
             <!-- END - projects list/description -->
 
             <!-- contact form-->
-            <section id="contact">
+            <section class="section" id="contact">
                 <div class="container">
                     <h2>Contact Me</h2>
-                    <aside style=" text-align: center; color: #343434;">
-                        <p> Contact me if you want to collaborate or have any questions about my projects.
-                            I will get back to you in 24-48hr window.
-                        </p>
-                        <p> You information <strong>will not</strong> be stored or shared.</p>
-                    </aside>
-                    <!-- relative_url.htm is a random file name for the action, so I don't get errors when validating the site-->
-                    <!-- will be using javascript for the action atribute-->
-                    <form action="relative_url.htm" method="post">
+                    <form action="https://getform.io/f/85324b60-296b-44de-aa72-95b26e9dea56" method="POST">
                         <form-field-name>
                             <label for="name">Name*</label>
                             <input type="text" name="name" id="name" required minlength="3" maxlength="25">
@@ -75,7 +149,7 @@
 
                         <form-field-email>
                             <label for="email">Email*</label>
-                            <input type="text" name="email" id="email" size="30" maxlength="35" required>
+                            <input type="email" name="email" id="email" size="30" maxlength="35" required>
                         </form-field-email><br>
 
                         <form-field-subject>
@@ -86,27 +160,38 @@
                         <form-field-message>
                             <label for="message">Message*</label>
                             <textarea name="message" placeholder="Type message here..." id="message"
-                                style="height:200px" required></textarea>
+                                style="height:100px" required></textarea>
                         </form-field-message><br>
-
-                        <input type="submit" value="Submit"><i class="far fa-paper-plane"></i>
+                        <p> You information <strong>will not</strong> be stored or shared.</p>
+                        <input type="submit" class="submit-btn" value="Submit">
                     </form>
                     <br><br>
                 </div>
+                <footer class="contact-footer">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="far fa-envelope" id="contact-icon-1" style="color: #ffffff;"></i>
+                            <a href="mailto:tamarasagakova@gmail.com">tamarasagakova@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span id="contact-icon-2">&#9742;</span>
+                            <a href="tel:+16198309889">+1 (619) 830-9889</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot" id="contact-icon-3" style="color: #ffffff;"></i>
+                            <span>San Diego, CA</span>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="bottom-text">Copyright © 2023 All rights reserved | Designed and Built by Tamara Sagakova
+                    </p>
+                </footer>
             </section>
-            <!-- END - contact form-->
+        </div>
+        <!-- END - contact form-->
 
-            <!-- back to the top button-->
-            <div class="back-to-top-wrapper">
-                <a href="#" class="top" aria-label="Back to Top">&#8593;</a>
-            </div>
-            <!-- END - back to the top button-->
-        </top-button>
     </main>
-
-    <footer>
-        <p style="text-align:center;">Copyright © 2022 All rights reserved | Designed and Built by Tamara Sagakova</p>
-    </footer>
+    <script src="https://kit.fontawesome.com/1e1d2c8f82.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
