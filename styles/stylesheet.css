@@ -20,6 +20,7 @@
     -moz-user-select: none;
     user-select: none;
     color: white;
+    zoom: reset;
 }
 
 a,
@@ -287,10 +288,14 @@ input[type=submit] {
     font-weight: 500;
     align-self: center;
     background: rgba(85, 2, 24, 0.9);
-    border-radius: 20px;
+    border-radius: 1vw;
     font-size: 1vw;
     padding: 0.8vw 1vw;
     cursor: var(--cursor-pointer);
+}
+
+input[type=submit]:hover{
+    border-radius: 3vw;
 }
 
 .contact-footer {
