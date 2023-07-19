@@ -239,7 +239,8 @@ form {
     /*to center*/
 }
 
-label {
+label,
+.underform-text {
     font-size: 1.2em;
 }
 
@@ -315,3 +316,49 @@ input[type=submit]:hover {
 }
 
 /* END -- Contact */
+
+
+@media screen and (max-width: 1070px) {
+
+    /* Section Titles */
+    h2 {
+        font-size: 3em;
+    }
+
+    #about .about-text p {
+        font-size: 150%;
+    }
+
+    #about .about-text h1 {
+        font-size: 650%;
+    }
+
+    /* Sub-titles ed */
+    .ed-container h3 {
+        font-size: 1.1em;
+    }
+
+    .ed-container p,
+    .ed-container .education-courses,
+    table,
+    label {
+        font-size: 1em;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit],
+    select,
+    textarea,
+    .underform-text,
+    #contact-icon-1,
+    #contact-icon-2,
+    #contact-icon-3 {
+        font-size: 0.8rem;
+
+    }
+
+    .bottom-text {
+        font-size: 0.6em;
+    }
+}
