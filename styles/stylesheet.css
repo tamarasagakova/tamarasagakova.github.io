@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
-:root{
+:root {
     /* https://www.cursors-4u.com */
     --cursor-default: url(https://cur.cursors-4u.net/cursors/cur-7/cur641.cur), auto;
     --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur), auto;
@@ -24,7 +24,7 @@
 }
 
 a,
-.githublogo > i{
+.githublogo>i {
     cursor: var(--cursor-pointer);
 }
 
@@ -116,7 +116,62 @@ main {
     font-size: 7vw;
     margin-bottom: 3%;
     font-family: 'Arizonia', cursive;
+
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
 }
+
+@keyframes wave {
+    0% {
+        color: #7a0039;
+    }
+
+    10% {
+        color: #611237;
+    }
+
+    20% {
+        color: #a84372;
+    }
+
+    30% {
+        color: #d72779;
+    }
+
+    40% {
+        color: #e95b9e;
+    }
+
+    50% {
+        color: #f87eb7;
+    }
+
+    60% {
+        color: #e95b9e;
+    }
+
+    70% {
+        color: #d72779;
+    }
+
+    80% {
+        color: #a84372;
+    }
+
+    90% {
+        color: #611237;
+    }
+
+    100% {
+        color: #7a0039;
+    }
+}
+
+#about .about-text h1:hover {
+    animation: wave 2s infinite;
+}
+
 
 /* END -- About */
 
@@ -174,6 +229,7 @@ ul.education-courses>li {
 .project-bp>li::before {
     content: "- ";
 }
+
 /* END -- Education */
 
 /* START -- Projects */
@@ -232,6 +288,7 @@ a.project-3 {
     margin-right: 80%;
     font-size: 2vw;
 }
+
 /* END -- Projects */
 
 
@@ -294,7 +351,7 @@ input[type=submit] {
     cursor: var(--cursor-pointer);
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     border-radius: 3vw;
 }
 
