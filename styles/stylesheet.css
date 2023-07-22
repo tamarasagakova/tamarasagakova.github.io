@@ -23,11 +23,18 @@
     zoom: reset;
 }
 
+main {
+    background: url('/images/background.jpeg') 50% no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 a,
 .githublogo>i {
     cursor: var(--cursor-pointer);
 }
 
+/* Section Titles */
 h2 {
     text-align: center;
     font-size: 4vw;
@@ -80,18 +87,12 @@ section {
 
 }
 
-.logo a {
+h1.logo a {
     margin: 0 1vw;
     color: white;
     font-family: 'Arizonia', cursive;
     font-size: 2vw;
 
-}
-
-main {
-    background: url('/images/background.jpeg') 50% no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* START -- About */
@@ -286,11 +287,12 @@ a.project-3 {
 
 /* START -- Contact */
 #contact {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 94vh !important;
+    height: 94vh;
 }
 
 form {
@@ -298,12 +300,8 @@ form {
     flex-direction: column;
 }
 
-.container {
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    position: relative;
-    margin-top: 3vh;
+.contact-container {
+    padding: 20vh 0;
 }
 
 label,
@@ -348,9 +346,9 @@ input[type=submit]:hover {
 }
 
 .contact-footer {
+    margin-top: auto;
     background: linear-gradient(0.25turn, #740229, #85023f);
     padding: 1vh 0;
-    margin-top: auto;
     width: 100%;
     height: 11vh;
 }
@@ -359,6 +357,7 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    padding: 0 1vw;
 }
 
 .contact-item {
@@ -381,8 +380,152 @@ input[type=submit]:hover {
 }
 
 .bottom-text {
+    padding-top: 3vh;
     text-align: center;
     font-size: 1vw;
 }
 
 /* END -- Contact */
+
+/* Media Queries */
+@media only screen and (max-device-width: 950px) and (max-device-height: 415px) {
+    
+    h1.logo {
+        font-size: 1.7vw;
+    }
+
+    #about .about-text p {
+        font-size: 1.7vw;
+    }
+    
+    #about .about-text h1 {
+        font-size: 6.7vw;
+    }
+
+    /* Section Titles */
+    h2 {
+        font-size: 2vw;
+    }
+    .ed-container h3 {
+        font-size: 1.1vw; 
+    }
+    .ed-container p,
+    .ed-container .education-courses,
+    table,
+    label,
+    .underform-text,
+    #contact-icon-1,
+    #contact-icon-2,
+    #contact-icon-3 {
+        font-size: 0.9vw; 
+    }
+
+    .githublogo {
+        font-size: 1.6vw;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit],
+    select,
+    textarea,
+    .contact-item a,
+    .contact-item span,
+    .bottom-text {
+        font-size: 0.7vw;
+    }
+
+    input[type=text],
+    input[type=email]{
+        margin: 0.3vh 0;
+    }
+
+    .proj-container {
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .ed-container {
+        width: 50vw;
+        height: 60vh;
+    }
+}
+
+/* iPhones */
+@media only screen and (max-device-width: 391px) and (max-device-height: 845px) {
+    
+    h1.logo a {
+        font-size: 5vw;
+    }
+
+    .nav-contents {
+        font-size: 2.5vw;
+    }
+
+    #about .about-text p {
+        font-size: 4vw;
+    }
+    
+    #about .about-text h1 {
+        font-size: 12vw;
+    }
+
+    .ed-container {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .proj-container {
+        width: 100vw;
+        height: 86vh;
+    }
+
+    /* Section Titles */
+    h2 {
+        font-size: 7vw;
+    }
+    .ed-container h3 {
+        font-size: 4vw; 
+    }
+    .ed-container p,
+    .ed-container .education-courses,
+    table,
+    label,
+    .underform-text,
+    #contact-icon-1,
+    #contact-icon-2,
+    #contact-icon-3 {
+        font-size: 2.9vw; 
+    }
+
+    .githublogo {
+        font-size: 3vw;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit],
+    select,
+    textarea{
+        font-size: 3vw;
+    }
+
+    .contact-container{
+        width: 80%;
+    }
+    
+    .contact-item a,
+    .contact-item span,
+    .bottom-text {
+        font-size: 2.1vw;
+    }
+
+    input[type=text],
+    input[type=email]{
+        margin: 0.3vh 0;
+    }
+
+    footer{
+        margin-top: 1vh;
+    }
+}
