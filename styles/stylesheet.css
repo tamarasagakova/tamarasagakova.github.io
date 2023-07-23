@@ -323,7 +323,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    resize: vertical;
+    resize: none;
     cursor: var(--cursor-pen)
 }
 
