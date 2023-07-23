@@ -453,7 +453,7 @@ input[type=submit]:hover {
 }
 
 /* iPhones */
-@media only screen and (max-device-width: 391px) and (max-device-height: 845px) {
+@media only screen and (max-device-width: 415px) and (max-device-height: 897px) {
     
     h1.logo a {
         font-size: 5vw;
