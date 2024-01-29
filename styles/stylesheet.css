@@ -1,387 +1,394 @@
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
 
 :root {
-    /* https://www.cursors-4u.com */
-    --cursor-default: url(https://cur.cursors-4u.net/cursors/cur-7/cur641.cur), auto;
-    --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur), auto;
-    --cursor-pen: url(https://cur.cursors-4u.net/cursors/cur-7/cur639.cur), auto;
+  /* https://www.cursors-4u.com */
+  --cursor-default: url(https://cur.cursors-4u.net/cursors/cur-7/cur641.cur),
+    auto;
+  --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur),
+    auto;
+  --cursor-pen: url(https://cur.cursors-4u.net/cursors/cur-7/cur639.cur), auto;
 }
 
 * {
-    scroll-padding-top: 6vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
-    cursor: var(--cursor-default);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    color: white;
-    zoom: reset;
+  scroll-padding-top: 6vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  cursor: var(--cursor-default);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: white;
+  zoom: reset;
 }
 
 main {
-    background: url('/images/background.jpeg') 50% no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background: url("/images/background.jpeg") 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a,
-.githublogo>i {
-    cursor: var(--cursor-pointer);
+.githublogo > i {
+  cursor: var(--cursor-pointer);
 }
 
 /* Section Titles */
 h2 {
-    text-align: center;
-    font-size: 4vw;
-    font-family: 'Arizonia', cursive;
+  text-align: center;
+  font-size: 4vw;
+  font-family: "Arizonia", cursive;
 }
 
 section {
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: start;
-    background: linear-gradient(0.2turn, rgb(255, 0, 68, 0.1), rgba(239, 40, 133, 0.1));
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  background: linear-gradient(
+    0.2turn,
+    rgb(255, 0, 68, 0.1),
+    rgba(239, 40, 133, 0.1)
+  );
 }
 
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .navbar-container {
-    display: flex;
-    width: 100%;
-    height: 6vh;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(0.25turn, #740229, #85023f);
-    padding: 0 0.5em;
-    position: fixed;
-    z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0.25turn, #740229, #85023f);
+  padding: 0 0.5em;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-contents {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    text-transform: uppercase;
-    font-size: 1vw;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1vw;
 }
 
 .nav-contents a {
-    display: block;
-    padding: 1em;
-    color: white;
+  display: block;
+  padding: 1em;
+  color: white;
 }
 
 .nav-contents a:hover {
-    color: #85023f;
-    background-color: white;
-
+  color: #85023f;
+  background-color: white;
 }
 
 h1.logo a {
-    margin: 0 1vw;
-    color: white;
-    font-family: 'Arizonia', cursive;
-    font-size: 2vw;
-
+  margin: 0 1vw;
+  color: white;
+  font-family: "Arizonia", cursive;
+  font-size: 2vw;
 }
 
 /* START -- About */
 #about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #about .about-text {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 #about .about-text p {
-    font-size: 2vw;
-    font-weight: 450;
-    line-height: 1.5em;
+  font-size: 2vw;
+  font-weight: 450;
+  line-height: 1.5em;
 }
 
 #about .about-text h1 {
-    font-size: 7vw;
-    margin-bottom: 3%;
-    font-family: 'Arizonia', cursive;
+  font-size: 7vw;
+  margin-bottom: 3%;
+  font-family: "Arizonia", cursive;
 
-    font-weight: bold;
-    display: inline-block;
-    transition: color 0.3s ease-in-out;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
 }
 
 @keyframes wave {
-    0% {
-        color: #7a0039;
-    }
+  0% {
+    color: #7a0039;
+  }
 
-    12.5% {
-        color: #892151;
-    }
+  12.5% {
+    color: #892151;
+  }
 
-    25% {
-        color: #a84372;
-    }
+  25% {
+    color: #a84372;
+  }
 
-    37.5% {
-        color: #d72779;
-    }
+  37.5% {
+    color: #d72779;
+  }
 
-    50% {
-        color: #e95b9e;
-    }
+  50% {
+    color: #e95b9e;
+  }
 
-    62.5% {
-        color: #f87eb7;
-    }
+  62.5% {
+    color: #f87eb7;
+  }
 
-    75% {
-        color: #e95b9e;
-    }
+  75% {
+    color: #e95b9e;
+  }
 
-    87.5% {
-        color: #d72779;
-    }
+  87.5% {
+    color: #d72779;
+  }
 
-    100% {
-        color: #7a0039;
-    }
+  100% {
+    color: #7a0039;
+  }
 }
 
 #about .about-text h1:hover {
-    animation: wave 4s infinite;
+  animation: wave 4s infinite;
 }
 /* END -- About */
 
 /* START -- Education */
 #education {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3%;
 }
 
 #education h2 {
-    padding-bottom: 3%;
+  padding-bottom: 3%;
 }
 
 .ed-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60vw;
-    height: 70vh;
-    background: linear-gradient(0.2turn, rgba(31, 30, 31, 0.7), rgba(31, 30, 31, 0.7));
-    background-clip: content-box;
-    border-radius: 5vw;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  height: 70vh;
+  background: linear-gradient(
+    0.2turn,
+    rgba(31, 30, 31, 0.7),
+    rgba(31, 30, 31, 0.7)
+  );
+  background-clip: content-box;
+  border-radius: 5vw;
 }
 
 .ed-container h3 {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .ed-container p,
 .ed-container .education-courses {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
 .education-item-1 {
-    margin-bottom: 1vw;
+  margin-bottom: 1vw;
 }
 
 .education-item-1,
 .education-item-2 {
-    padding: 0 3vw;
+  padding: 0 3vw;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-ul.education-courses>li {
-    text-indent: 3%;
+ul.education-courses > li {
+  text-indent: 3%;
 }
 
-.education-courses>li::before,
-.project-bp>li::before {
-    content: "- ";
+.education-courses > li::before,
+.project-bp > li::before {
+  content: "- ";
 }
 
 /* END -- Education */
 
 /* START -- Projects */
 #projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 15% 3% 15%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15% 3% 15%;
 }
 
 .proj-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80vw;
-    height: 80vh;
-    background: linear-gradient(0.2turn, rgba(31, 30, 31, 0.7), rgba(31, 30, 31, 0.7));
-    background-clip: content-box;
-    border-radius: 5vw;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 80vh;
+  background: linear-gradient(
+    0.2turn,
+    rgba(31, 30, 31, 0.7),
+    rgba(31, 30, 31, 0.7)
+  );
+  background-clip: content-box;
+  border-radius: 5vw;
 }
 
 table {
-    table-layout: fixed;
-    font-size: 1.2vw;
+  table-layout: fixed;
+  font-size: 1.2vw;
 }
-
 
 td {
-    padding: 2vw 4vw;
+  padding: 2vw 4vw;
 }
 
-td>p {
-    font-family: monospace;
+td > p {
+  font-family: monospace;
 }
 
 .project-title {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.01em;
-    justify-items: center;
-    font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.01em;
+  justify-items: center;
+  font-weight: 500;
 }
 
 a.project-1,
 a.project-2,
 a.project-3 {
-    justify-self: stretch;
-    width: 4em;
-    cursor: var(--cursor-default);
+  justify-self: stretch;
+  width: 4em;
+  cursor: var(--cursor-default);
 }
 
 .githublogo {
-    align-self: center;
-    margin-right: 80%;
-    font-size: 2vw;
+  align-self: center;
+  margin-right: 80%;
+  font-size: 2vw;
 }
 
 /* END -- Projects */
 
-
 /* START -- Contact */
 #contact {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 94vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-container {
-    width: 50%;
-    padding: 9vh 0;
+  width: 50%;
+  padding: 9vh 0;
 }
 
 label,
 .underform-text {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
-    color: black;
-    font-size: 1vw;
-    width: 95%;
-    padding: 0.5vw;
-    border: 1px solid #85023f;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    resize: none;
-    cursor: var(--cursor-pen)
+  color: black;
+  font-size: 1vw;
+  width: 95%;
+  padding: 0.5vw;
+  border: 1px solid #85023f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  resize: none;
+  cursor: var(--cursor-pen);
 }
 
-form>p {
-    text-align: center;
-    margin-bottom: 2%;
+form > p {
+  text-align: center;
+  margin-bottom: 2%;
 }
 
-input[type=submit] {
-    font-weight: 500;
-    align-self: center;
-    background: rgba(85, 2, 24, 0.9);
-    border-radius: 1vw;
-    font-size: 1vw;
-    padding: 0.8vw 1vw;
-    cursor: var(--cursor-pointer);
+input[type="submit"] {
+  font-weight: 500;
+  align-self: center;
+  background: rgba(85, 2, 24, 0.9);
+  border-radius: 1vw;
+  font-size: 1vw;
+  padding: 0.8vw 1vw;
+  cursor: var(--cursor-pointer);
 }
 
-input[type=submit]:hover {
-    border-radius: 3vw;
+input[type="submit"]:hover {
+  border-radius: 3vw;
 }
 
 .contact-footer {
-    margin-top: auto;
-    background: linear-gradient(0.25turn, #740229, #85023f);
-    padding: 1vh 0;
-    width: 100%;
-    height: 11vh;
+  margin-top: auto;
+  background: linear-gradient(0.25turn, #740229, #85023f);
+  padding: 1vh 0;
+  width: 100%;
+  height: 11vh;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    padding: 0 1vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 0 1vw;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #contact-icon-1,
 #contact-icon-2,
 #contact-icon-3 {
-    font-size: 1vw;
-    margin-right: 1vw;
+  font-size: 1vw;
+  margin-right: 1vw;
 }
 
 .contact-item a,
 .contact-item span {
-    text-decoration: none;
-    color: white;
-    font-size: 1vw;
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
 }
 
 .bottom-text {
-    padding-top: 3vh;
-    text-align: center;
-    font-size: 1vw;
+  padding-top: 3vh;
+  text-align: center;
+  font-size: 1vw;
 }
 
 /* END -- Contact */
