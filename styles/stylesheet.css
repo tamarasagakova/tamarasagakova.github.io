@@ -6,7 +6,7 @@
     auto;
   --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur),
     auto;
-  --cursor-pen: url(https://cur.cursors-4u.net/cursors/cur-7/cur639.cur), auto;
+  --cursor-pen: url(https://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto;
 }
 
 * {
@@ -184,7 +184,7 @@ h1.logo a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-margin-top: 6vh;
+  margin-top: 6vh; /*MQ */
   width: 60vw;
   height: 70vh;
   background: linear-gradient(
@@ -241,7 +241,7 @@ ul.education-courses > li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6vh;
+  margin-top: 6vh; /*MQ */
   width: 80vw;
   height: 80vh;
   background: linear-gradient(
@@ -308,7 +308,7 @@ form {
 .contact-container {
   width: 50%;
   padding: 9vh 0;
-margin-top: 6vh;
+  margin-top: 6vh; /*MQ */
 }
 
 label,
@@ -396,8 +396,8 @@ input[type="submit"]:hover {
 
 /* Media Queries */
 @media only screen and (max-device-width: 1440px) and (max-device-height: 900px) {
-    .proj-container {
-            width: 80vw;
-            height: 80vh;
-        }
+  .proj-container {
+    width: 80vw;
+    height: 80vh;
+  }
 }
