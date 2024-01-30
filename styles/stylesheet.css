@@ -464,11 +464,12 @@ input[type="submit"]:hover {
 
   /* START -- Projects */
   #projects {
-    padding: 0 7%;
+    padding: 0 5%;
   }
 
   .proj-container {
     width: 95vw;
+    height: 80vh;
   }
 
   table {
@@ -476,7 +477,7 @@ input[type="submit"]:hover {
   }
 
   .githublogo {
-    font-size: 4.5vw;
+    font-size: 4.3vw;
   }
 
   /* END -- Projects */
