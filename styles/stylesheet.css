@@ -402,7 +402,7 @@ input[type="submit"]:hover {
 /* iPhone 14 Pro */
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
-  
+
   /* Section Titles */
   h2 {
     font-size: 8vw;
@@ -443,7 +443,7 @@ input[type="submit"]:hover {
 
   .ed-container {
     width: 80vw;
-    height: 40vh;
+    height: 50vh;
   }
 
   .ed-container h3 {
@@ -462,11 +462,13 @@ input[type="submit"]:hover {
 
   /* START -- Projects */
 
+  /* START -- Projects */
+  #projects {
+    padding: 0 7%;
+  }
+
   .proj-container {
-    margin-top: 6vh;
-    /*MQ */
     width: 95vw;
-    height: 90vh;
   }
 
   table {
