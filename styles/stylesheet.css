@@ -31,7 +31,7 @@ main {
 }
 
 a,
-.githublogo > i {
+.githublogo>i {
   cursor: var(--cursor-pointer);
 }
 
@@ -46,11 +46,9 @@ section {
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
-  background: linear-gradient(
-    0.2turn,
-    rgb(255, 0, 68, 0.1),
-    rgba(239, 40, 133, 0.1)
-  );
+  background: linear-gradient(0.2turn,
+      rgb(255, 0, 68, 0.1),
+      rgba(239, 40, 133, 0.1));
 }
 
 .wrapper {
@@ -167,6 +165,7 @@ h1.logo a {
 #about .about-text h1:hover {
   animation: wave 4s infinite;
 }
+
 /* END -- About */
 
 /* START -- Education */
@@ -184,14 +183,13 @@ h1.logo a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6vh; /*MQ */
+  margin-top: 6vh;
+  /*MQ */
   width: 60vw;
   height: 70vh;
-  background: linear-gradient(
-    0.2turn,
-    rgba(31, 30, 31, 0.7),
-    rgba(31, 30, 31, 0.7)
-  );
+  background: linear-gradient(0.2turn,
+      rgba(31, 30, 31, 0.7),
+      rgba(31, 30, 31, 0.7));
   background-clip: content-box;
   border-radius: 5vw;
 }
@@ -218,12 +216,12 @@ ul {
   list-style-type: none;
 }
 
-ul.education-courses > li {
+ul.education-courses>li {
   text-indent: 3%;
 }
 
-.education-courses > li::before,
-.project-bp > li::before {
+.education-courses>li::before,
+.project-bp>li::before {
   content: "- ";
 }
 
@@ -241,14 +239,13 @@ ul.education-courses > li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6vh; /*MQ */
+  margin-top: 6vh;
+  /*MQ */
   width: 80vw;
   height: 80vh;
-  background: linear-gradient(
-    0.2turn,
-    rgba(31, 30, 31, 0.7),
-    rgba(31, 30, 31, 0.7)
-  );
+  background: linear-gradient(0.2turn,
+      rgba(31, 30, 31, 0.7),
+      rgba(31, 30, 31, 0.7));
   background-clip: content-box;
   border-radius: 5vw;
 }
@@ -262,7 +259,7 @@ td {
   padding: 2vw 4vw;
 }
 
-td > p {
+td>p {
   font-family: monospace;
 }
 
@@ -308,7 +305,8 @@ form {
 .contact-container {
   width: 50%;
   padding: 9vh 0;
-  margin-top: 6vh; /*MQ */
+  margin-top: 6vh;
+  /*MQ */
 }
 
 label,
@@ -337,7 +335,7 @@ textarea {
   height: 7vw;
 }
 
-form > p {
+form>p {
   text-align: center;
   margin-bottom: 2%;
 }
@@ -400,7 +398,7 @@ input[type="submit"]:hover {
 
 /* Media Queries */
 /* iPhone 14 Pro */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 
   /* Section Titles */
@@ -433,6 +431,7 @@ input[type="submit"]:hover {
   #about .about-text h1 {
     font-size: 11vw;
   }
+
   /* END -- About */
 
   /* START -- Education */
@@ -458,8 +457,9 @@ input[type="submit"]:hover {
   .education-item-1 {
     margin-bottom: 3vw;
   }
+
   /* END -- Education */
-  
+
   /* START -- Projects */
   #projects {
     padding: 0 5%;
