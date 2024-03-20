@@ -297,19 +297,13 @@ a.project-3 {
   height: 94vh;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-container {
-  width: auto;
-  padding: 9vh 0;
+  width: 100%;
   height: 86vh;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 label,
@@ -352,6 +346,8 @@ input[type="submit"] {
   font-size: 1vw;
   padding: 0.8vw 1vw;
   cursor: var(--cursor-pointer);
+  display: block; /* makes the button is a block-level element */
+  margin: 0 auto; /* center horizontally */
 }
 
 input[type="submit"]:hover {
