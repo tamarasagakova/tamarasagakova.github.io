@@ -1,0 +1,129 @@
+/* iPhone 14 Pro */
+@media only screen and (max-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    /* Section Titles */
+    h2 {
+        font-size: 8vw;
+    }
+
+    .nav-contents {
+        gap: 8px;
+        font-size: 2.1vw;
+    }
+
+    .nav-contents a {
+        padding: 2em;
+    }
+
+    h1.logo a {
+        margin: 0 3vw;
+        font-size: 6vw;
+    }
+
+    /* START -- About */
+
+    #about .about-text p {
+        font-size: 5vw;
+        font-weight: 450;
+        line-height: 1.5em;
+    }
+
+    #about .about-text h1 {
+        font-size: 11vw;
+    }
+
+    /* END -- About */
+
+    /* START -- Education */
+
+    #education h2 {
+        padding-bottom: 3%;
+    }
+
+    .ed-container {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .ed-container h3 {
+        font-size: 3vw;
+    }
+
+    .ed-container p,
+    .ed-container .education-courses {
+        font-size: 2.9vw;
+    }
+
+    .education-item-1 {
+        margin-bottom: 3vw;
+    }
+
+    /* END -- Education */
+
+    /* START -- Projects */
+    #projects {
+        padding: 0 5%;
+    }
+
+    .proj-container {
+        width: 95vw;
+        height: 80vh;
+    }
+
+    table {
+        font-size: 2.9vw;
+    }
+
+    .githublogo {
+        margin-right: 40%;
+        font-size: 4.3vw;
+    }
+
+    /* END -- Projects */
+
+    /* START -- Contact */
+    #contact {
+        height: 94vh;
+    }
+
+    .contact-container {
+        width: 70%;
+        padding: 9vh 0;
+        margin-top: 6vh;
+        /*MQ */
+    }
+
+    label,
+    .underform-text {
+        font-size: 3vw;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 3vw;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    input[type="submit"] {
+        font-size: 3vw;
+    }
+
+    #contact-icon-1,
+    #contact-icon-2,
+    #contact-icon-3 {
+        font-size: 1vw;
+        margin-right: 1vw;
+    }
+
+    .contact-item a,
+    .contact-item span,
+    .bottom-text {
+        font-size: 2vw;
+    }
+}
