@@ -183,8 +183,9 @@
           <div class="contact-container">
             <h2>Contact Me</h2>
             <form
-              action="https://getform.io/f/85324b60-296b-44de-aa72-95b26e9dea56"
-              method="POST"
+              action="mail_handler.php"
+              method="post"
+              enctype="multipart/form-data"
             >
               <form-field-name>
                 <label for="name">Name*</label>
@@ -219,6 +220,7 @@
                   required
                 ></textarea>
               </form-field-message>
+
               <p class="underform-text">
                 Your information <strong>will not</strong> be stored or shared.
               </p>
