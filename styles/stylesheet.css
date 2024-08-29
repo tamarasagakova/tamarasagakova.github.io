@@ -2,10 +2,8 @@
 
 :root {
   /* https://www.cursors-4u.com */
-  --cursor-default: url(https://cur.cursors-4u.net/cursors/cur-7/cur641.cur),
-    auto;
-  --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur),
-    auto;
+  --cursor-default: url(https://cur.cursors-4u.net/cursors/cur-7/cur641.cur), auto;
+  --cursor-pointer: url(https://cur.cursors-4u.net/cursors/cur-7/cur638.cur), auto;
   --cursor-pen: url(https://cur.cursors-4u.net/cursors/cur-7/cur632.cur), auto;
 }
 
